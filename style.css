@@ -57,7 +57,7 @@ div.section {
 }
 
 /* If we want the divs with ids plan and more to look the same, we can put them together */
-#plan, #more, #whoweare {
+#plan, #more, #whoweare, #lol {
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -96,3 +96,6 @@ div.section {
 	padding-top: 0;
 }
 
+#lol {
+	padding-top: 0;
+}
