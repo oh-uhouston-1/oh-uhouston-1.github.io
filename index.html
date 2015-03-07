@@ -3,7 +3,6 @@
 
 <head>
         <title>Practicing Git</title>
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -12,40 +11,70 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
 	<script src="poem.js"></script>
 </head>
 
-<body>
-        <div class="section" id="plan">
-                <h1>Practicing Git</h1>
-                <div class="minileft">
-                        <div><img src="git.svg" width="200px"/></div>
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#git-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><div>Practicing <img src="git.svg" width="40"/></div></a>
                 </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="git-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                                <li><a href="#plan">Home</a></li>
+                                <li><a href="#poem">Poem</a></li>
+                                <li><a href="#whoweare">About Us</a></li>
+                                <li><a href="#more">Resources</a></li>
+                        </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+</nav>
 
-		<p>Ready to learn about version control through git?  You can 
-		<a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Students">follow along here</a>.</p>
-  
-                <h2>Version control is...</h2>
+<body data-spy="scroll" data-target=".git-navbar-collapse-1">
+        <div class="section" id="plan">
+                <h1 style="text-align: center">Practicing Git</h1>
+                <br>
+                <div class="container">
+                        <div class="col-xs-12 col-md-3">
+                                <img class="gitImage" src="git.svg" width="100%"/>
+                        </div>
+        		<div class="col-xs-12 col-md-9">
+                                <p>Ready to learn about version control through git?  You can 
+                		<a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Students">follow along here</a>.</p>
+                  
+                                <h2>Version control is...</h2>
 
-		<p>is a system that records changes to a file or set of files over time so that you can recall specific versions later.</p>
+                		<p>is a system that records changes to a file or set of files over time so that you can recall specific versions later.</p>
 
-                <h2>Cloning a repository...</h2>
+                                <h2>Cloning a repository...</h2>
 
-		<p>...copies the repository into your own directory.  <a href="http://en.wikipedia.org/wiki/Clone_Wars_(Star_Wars)">The Clone Wars</a>, that is.</p>
+                		<p>...copies the repository into your own directory.  <a href="http://en.wikipedia.org/wiki/Clone_Wars_(Star_Wars)">The Clone Wars</a>, that is.</p>
 
-                <h2>"Adding", "committing" and "pushing" changes...</h2>
+                                <h2>"Adding", "committing" and "pushing" changes...</h2>
 
-		<p>Adding selects the changes made and puts it on the queue for changes. Commiting records the changes made.  Pushing will share the changes made to the main repository.</p>
+                		<p>Adding selects the changes made and puts it on the queue for changes. Commiting records the changes made.  Pushing will share the changes made to the main repository.</p>
 
-                <h2>You need to fork when...</h2>
+                                <h2>You need to fork when...</h2>
 
-		<p>...you want to make a personal copy of a repository.</p>
-
-
+                		<p>...you want to make a personal copy of a repository.</p>
+                        </div>
+                </div>
         </div>
 
         <div class="section" id="poem">
-		<p>An interactive poem about version control:</p>
+		<h1>An interactive poem about version control:</h1>
 		<div id="line">
 		<p onClick=nextLine(0)>(Click to advance.)</p>
 		</div>
